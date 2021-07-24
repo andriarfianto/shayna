@@ -7,6 +7,7 @@
           <carousel
             class="product-slider"
             :items="4"
+            :dots="false"
             :nav="false"
             :autoplay="true"
           >
