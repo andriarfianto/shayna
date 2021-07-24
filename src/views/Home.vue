@@ -1,19 +1,19 @@
 <template>
   <div class="home">
-    <Header />
+    <HeaderShayna />
     <HeroShayna />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Header from '@/components/Header.vue';
+import HeaderShayna from '@/components/HeaderShayna.vue';
 import HeroShayna from '@/components/HeroShayna.vue';
 
 export default {
   name: 'Home',
   components: {
-    Header,
+    HeaderShayna,
     HeroShayna
   },
 };
