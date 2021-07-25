@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="product">
     <HeaderShayna />
     <!-- Breadcrumb Section Begin -->
     <div class="breacrumb-section text-left">
@@ -116,10 +116,10 @@
                     <h4>$495.00</h4>
                   </div>
                   <div class="quantity">
-                    <a
-                      href="shopping-cart.html"
+                    <router-link
+                      to="/cart"
                       class="primary-btn pd-cart"
-                      >Add To Cart</a
+                      >Add To Cart</router-link
                     >
                   </div>
                 </div>
@@ -130,6 +130,8 @@
       </div>
     </section>
     <!-- Product Shop Section End -->
+
+    <RelatedShayna />
     <FooterShayna />
   </div>
 </template>
@@ -138,6 +140,7 @@
 // @ is an alias to /src
 import HeaderShayna from '@/components/HeaderShayna.vue';
 import FooterShayna from '@/components/FooterShayna.vue';
+import RelatedShayna from '@/components/RelatedShayna.vue';
 
 import carousel from 'vue-owl-carousel';
 
@@ -146,6 +149,7 @@ export default {
   components: {
     HeaderShayna,
     FooterShayna,
+    RelatedShayna,
     carousel,
   },
   data() {
